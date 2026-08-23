@@ -7,12 +7,20 @@ provider.
 
 FAO DESERT LOCUST MATERIAL
 
-The CSV files and Desert Locust Bulletin in source_data/ are unmodified Food
-and Agriculture Organization of the United Nations (FAO) materials. FAO has
-described Locust Hub survey and control data as available for research and
-other non-commercial purposes. Item-level terms and FAO publication terms are
-controlling and should be checked before reuse or redistribution. Cite FAO and
-the Locust Hub, and do not imply FAO endorsement of this study.
+The Desert Locust observation CSV files in source_data/ are unmodified downloads
+from the Food and Agriculture Organization of the United Nations (FAO) Data
+Catalogue dataset "Desert Locusts Observations":
+
+  https://data.apps.fao.org/catalog/dataset/desert-locusts-observations
+
+The dataset is licensed under the Creative Commons Attribution 4.0 International
+licence (CC BY 4.0):
+
+  https://creativecommons.org/licenses/by/4.0/
+
+The Desert Locust Bulletin in source_data/ is a separate FAO publication and
+remains subject to its applicable publication terms. Cite FAO and do not imply
+FAO endorsement of this study.
 
 ERA5-LAND / COPERNICUS CLIMATE CHANGE SERVICE
 

@@ -1,9 +1,10 @@
 # source_data/ — raw FAO field reports
 
-Unmodified downloads from the FAO Locust Hub. These are **inputs**, not
-results: nothing in this study produced them, and nothing here has been
-filtered, cleaned or edited. Copies are kept inside this folder so the
-pipeline runs standalone.
+Unmodified downloads from the [FAO Data Catalogue — Desert Locusts
+Observations](https://data.apps.fao.org/catalog/dataset/desert-locusts-observations).
+These are **inputs**, not results: nothing in this study produced them, and
+nothing here has been filtered, cleaned or edited. Copies are kept inside this
+folder so the pipeline runs standalone.
 
 | File | Contents |
 |---|---|
@@ -20,10 +21,11 @@ the 10-week label grid.
 ## Terms and attribution
 
 These files are third-party material and are not covered by the repository's
-MIT licence. FAO describes Locust Hub survey and control data as available for
-research and other non-commercial purposes. Item-level terms and FAO publication
-terms remain controlling; users should verify them for their intended reuse.
-See the repository-level `NOTICE` for provenance, attribution and disclaimers.
+MIT licence. The FAO Data Catalogue licenses the Desert Locust observation CSV
+dataset under [Creative Commons Attribution 4.0 International (CC BY
+4.0)](https://creativecommons.org/licenses/by/4.0/). The Bulletin is a separate
+FAO publication and remains subject to its applicable publication terms. See the
+repository-level `NOTICE` for provenance, attribution and disclaimers.
 
 ## One parsing trap, documented because it caused a real error
 

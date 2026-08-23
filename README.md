@@ -154,7 +154,7 @@ missing.
 |---|---|
 | `01`–`12` `*.py` | the pipeline, in execution order |
 | `timeline_config.py` | single source of truth for every date, window, split and feature list |
-| `source_data/` | **inputs** — unmodified FAO Locust Hub field reports, plus Bulletin 497 |
+| `source_data/` | **inputs** — unmodified FAO Data Catalogue field reports, plus Bulletin 497 |
 | `Wave1_EastAfrica_Copernicus_Habitat_Mask_100m.tif` | **input** — habitat mask the absence sampler draws from |
 | `Data/` | point sets and extracted feature CSVs, plus the exported risk rasters |
 | `results/` | every table, figure and CSV the scripts produce — committed as a reference run |
@@ -580,7 +580,7 @@ operational value there: doing so cost 39 extra survey bases for 7 additional sw
 
 | Source | Used for | Licence / terms |
 |---|---|---|
-| [FAO Locust Hub](https://locust-hub-hqfao.hub.arcgis.com/) | all field reports in `source_data/` | research and other non-commercial use; item terms apply |
+| [FAO Data Catalogue — Desert Locusts Observations](https://data.apps.fao.org/catalog/dataset/desert-locusts-observations) | all field-report CSVs in `source_data/` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); attribution required |
 | FAO *Desert Locust Bulletin* 497 (5 March 2020) | corroborating narrative in `source_data/` | FAO publication terms |
 | ERA5-Land (`ECMWF/ERA5_LAND/DAILY_AGGR`) via Earth Engine | five weather features | Copernicus / CDS |
 | Sentinel-1 GRD (`COPERNICUS/S1_GRD`) via Earth Engine | four radar features | Copernicus |
