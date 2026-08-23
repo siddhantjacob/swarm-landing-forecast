@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or its findings, please cite it as below."
+title: "Forecasting Observed Desert Locust Swarm Occurrence from Weather and Radar"
+abstract: >-
+  A reproducible hindcast pipeline testing whether Sentinel-1 radar and ERA5-Land
+  reanalysis can forecast observed adult desert locust swarm occurrence as a proxy
+  for potential settlement habitat, using the 2020
+  East Africa outbreak. Trains on flightless hopper bands and tests on mobile adult
+  swarms to prevent re-detection, benchmarks feature sets under a fixed model
+  specification, and reports random, spatial-block and forward-temporal validation
+  together. Finds that Sentinel-1 degrades performance and that a distance-to-known-
+  infestation baseline using no satellite data outperforms the satellite model.
+type: software
+authors:
+  - given-names: "Siddhant"
+    family-names: "Jacob"
+    affiliation: "Cranfield University"
+version: "1.1.0"
+date-released: "2026-08-23"
+license: MIT
+repository-code: "https://github.com/siddhantjacob/swarm-landing-forecast"
+keywords:
+  - desert locust
+  - Schistocerca gregaria
+  - remote sensing
+  - Sentinel-1
+  - ERA5-Land
+  - species distribution modelling
+  - spatial cross-validation
+  - Google Earth Engine
+  - early warning

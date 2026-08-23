@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.Python
+
+# Earth Engine / credentials -- never commit these
+.config/earthengine/
+*credentials*
+*.pem
+*.key
+.env
+*.env
+.envrc
+.secrets
+secrets.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+
+# GDAL / QGIS sidecars regenerated on open
+*.aux.xml
+*.tif.ovr
+
+# Local environment capture (see requirements-lock.txt)
+my-environment.txt
+
+# Large intermediate exports downloaded from Google Drive by 05.
+# The five reference rasters ARE committed -- if you re-export your own and
+# want them out of version control, uncomment the next line.
+# Data/risk_rasters/*.tif
+
+# FUSE mount artefacts (Cowork device bridge)
+.fuse_hidden*
+
+# Scratch bin -- safe to delete this whole folder
+_to_delete/
+*.bak
+
+# Logs and scratch produced by local runs
+*.log
+*.tmp
+.ipynb_checkpoints/
+.pytest_cache/

@@ -1,0 +1,29 @@
+check,set,metric,value
+effective_n,training,sightings,125.0
+effective_n,training,distinct_era5_cells,55.0
+effective_n,holdout,sightings,463.0
+effective_n,holdout,distinct_era5_cells,159.0
+optimism,random_kfold,auc,0.8973
+optimism,forward_holdout,auc,0.7644
+spatial_block_cv,blocks,auc,0.7176
+morans_i_residuals,training residuals,I,0.1049
+morans_i_residuals,training residuals,p,0.001
+morans_i_residuals,holdout residuals,I,0.4752
+morans_i_residuals,holdout residuals,p,0.001
+absence_type,REAL surveyed only,model_auc,0.6098
+absence_type,REAL surveyed only,baseline_auc,0.6391
+absence_type,synthetic only,model_auc,0.8197
+absence_type,synthetic only,baseline_auc,0.8336
+training_period,"in-sample (memorised, NOT a result)",recall,0.952
+training_period,"in-sample (memorised, NOT a result)",auc_pooled,0.9892
+training_period,random 5-fold CV,recall,0.856
+training_period,random 5-fold CV,auc_pooled,0.893
+training_period,FORWARD HOLDOUT (W7-W10 swarms),recall,0.7149
+training_period,FORWARD HOLDOUT (W7-W10 swarms),auc_pooled,0.7644
+training_period,spatial block CV,recall,0.52
+training_period,spatial block CV,auc_pooled,0.6881
+train_week_balance,W1,sightings,13.0
+train_week_balance,W2,sightings,21.0
+train_week_balance,W3,sightings,12.0
+train_week_balance,W4,sightings,21.0
+train_week_balance,W5,sightings,58.0

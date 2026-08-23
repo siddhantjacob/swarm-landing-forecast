@@ -1,0 +1,2 @@
+comparison,n,auc_model,auc_baseline,auc_difference,ci_low,ci_high,verdict,n_bootstrap
+model_vs_distance_baseline,943,0.7554,0.8205,-0.0622,-0.0984,-0.0262,baseline wins,2000

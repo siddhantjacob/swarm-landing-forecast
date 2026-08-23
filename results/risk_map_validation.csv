@@ -1,0 +1,13 @@
+class,class_name,swarms,share_swarms,share_area,concentration,area_km2,bases_known_only,bases_full_alert,extra_bases
+4,Known infested area,272.0,0.8267,0.2768,2.986,46177.7,,,
+3,HIGH,6.0,0.0182,0.0359,0.508,5987.1,,,
+2,MEDIUM,1.0,0.003,0.0241,0.126,4015.2,,,
+1,LOW,15.0,0.0456,0.093,0.49,15511.6,,,
+0,Background,35.0,0.1064,0.5702,0.187,95109.4,,,
+weekly,W7,41.0,0.8049,,,,,,
+weekly,W8,98.0,0.8878,,,,,,
+weekly,W9,80.0,0.775,,,,,,
+weekly,W10,110.0,0.8818,,,,,,
+ops_cost,service_radius_25km,,,,,,87.0,126.0,39.0
+ops_cost,service_radius_50km,,,,,,32.0,43.0,11.0
+ops_cost,service_radius_75km,,,,,,18.0,21.0,3.0

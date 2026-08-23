@@ -1,0 +1,32 @@
+# REFERENCE NUMERICAL CONSTRAINTS (NOT A FULL LOCK FILE)
+#
+# Every number in README.md and docs/METHODOLOGY.md was produced on:
+#
+#   Python 3.14.3
+#
+# The two model-sensitive packages below are pinned because cross-version
+# drift was measured for the random forest. They reproduce the reported
+# numerical results in the verified environment described in README.md.
+#
+# The remaining dependencies are intentionally unpinned because their exact
+# reference versions were not recorded. Consequently this file does not
+# promise byte-identical PNG rendering: SHAP, Matplotlib, fonts and image
+# libraries can alter antialiasing and beeswarm placement without changing a
+# reported metric.
+#
+#   pip install -r requirements-lock.txt
+#
+# These pins reproduce the reported model metrics in the verified environment.
+# After installing, capture the complete resolved environment for your records:
+#
+#   pip freeze > my-environment.txt
+
+scikit-learn==1.9.0
+numpy==2.4.2
+
+earthengine-api
+pandas
+scipy
+matplotlib
+shap
+rasterio

@@ -1,0 +1,2 @@
+comparison,n,auc_model,auc_baseline,auc_difference,ci_low,ci_high,verdict,n_bootstrap
+model_vs_distance_baseline_somaliland,66,0.3733,0.4417,-0.0684,-0.2193,0.0764,indistinguishable,2000

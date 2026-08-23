@@ -1,0 +1,30 @@
+# Dependencies for scripts 01-12. This is the complete list -- the pipeline
+# imports nothing outside these and the standard library.
+#
+#   pip install -r requirements.txt
+#
+# Google Earth Engine authentication is needed for 02a-02d, 05, 10, 11 and 12
+# only:
+#
+#   earthengine authenticate
+#   export GEE_PROJECT_ID=your-gee-cloud-project
+#
+# Scripts 03, 04, 06, 07, 08 and 09 run entirely offline from the feature CSVs
+# and rasters committed to Data/.
+#
+# READ THIS BEFORE COMPARING NUMBERS. RandomForestClassifier(random_state=42)
+# is deterministic within a scikit-learn version and only within one. Results
+# shift by 0.01-0.04 AUC across versions from identical code and identical
+# inputs. Never treat an AUC difference below ~0.02 as meaningful. The table
+# in README.md ("Reproducibility and version sensitivity") shows the measured
+# drift. requirements-lock.txt pins the two model-sensitive numerical packages;
+# it is not a complete frozen environment.
+
+earthengine-api      # 02a, 02b, 02c, 02d, 05, 10, 11, 12 -- extraction and raster export
+pandas               # everywhere
+numpy                # everywhere
+scikit-learn         # 04, 09  -- RandomForestClassifier, metrics, CV splitters
+scipy                # 09      -- permutation test statistics
+matplotlib           # 04, 08, 10  -- SHAP summary plot and figures
+shap                 # 04      -- signed per-point feature contributions
+rasterio             # 01, 06, 07, 08  -- reading and writing the risk GeoTIFFs

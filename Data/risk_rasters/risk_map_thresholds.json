@@ -1,0 +1,88 @@
+{
+  "test_anchor": "2020-03-15",
+  "model": "ERA5-only (5 features), z-scored within anchor, RF untuned, threshold-free (percentile)",
+  "train_weeks": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "n_train_points": 257,
+  "n_known_sightings": 125,
+  "known_buffer_km": 30.0,
+  "grid": {
+    "width": 301,
+    "height": 601,
+    "res_deg": 0.009998249112250274,
+    "valid_habitat_px": 135427,
+    "px_km2": 1.2316685840120678
+  },
+  "grid_zscore_reference": {
+    "Precip_T45": {
+      "mean": 0.02006048677809729,
+      "sd": 0.01793824202230098
+    },
+    "Precip": {
+      "mean": 0.0045099939823600695,
+      "sd": 0.007174572891249853
+    },
+    "Temp": {
+      "mean": 301.48123209755,
+      "sd": 3.2831655028206503
+    },
+    "SoilTemp_T30": {
+      "mean": 304.96747115873325,
+      "sd": 4.178157330231055
+    },
+    "SoilTemp_T15": {
+      "mean": 305.654342564948,
+      "sd": 4.103128423559224
+    }
+  },
+  "train_zscore_reference": {
+    "Precip_T45": {
+      "mean": 0.006874539433366081,
+      "sd": 0.011096723572136492
+    },
+    "Precip": {
+      "mean": 0.024168462912630344,
+      "sd": 0.01807890351868023
+    },
+    "Temp": {
+      "mean": 298.82796562587487,
+      "sd": 2.891291112101001
+    },
+    "SoilTemp_T30": {
+      "mean": 300.88130492197735,
+      "sd": 3.6993412583296323
+    },
+    "SoilTemp_T15": {
+      "mean": 301.07193293947904,
+      "sd": 3.504976572204573
+    }
+  },
+  "percentile_thresholds": {
+    "high": 0.7916952817918301,
+    "medium": 0.7176416749234698,
+    "low": 0.5221808885011141
+  },
+  "model_class_pixels": {
+    "0": 101527,
+    "1": 20653,
+    "2": 6352,
+    "3": 6895
+  },
+  "operational_class_pixels": {
+    "0": 77220,
+    "1": 12594,
+    "2": 3260,
+    "3": 4861,
+    "4": 37492
+  },
+  "outputs": {
+    "model": "risk_model_classes.tif",
+    "buffer": "risk_known_buffer.tif",
+    "oper": "risk_operational.tif"
+  }
+}

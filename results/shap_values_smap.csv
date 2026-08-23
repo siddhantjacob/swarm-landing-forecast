@@ -1,0 +1,23 @@
+panel,feature,mean_abs_shap,direction_corr
+Fitted on hopper/band training points,Precip_T45,0.0931,0.65
+Fitted on hopper/band training points,Precip,0.01992,0.38
+Fitted on hopper/band training points,Temp,0.04564,0.736
+Fitted on hopper/band training points,SoilTemp_T30,0.03379,-0.388
+Fitted on hopper/band training points,SoilTemp_T15,0.03726,-0.466
+Fitted on hopper/band training points,RVI_Phenology_Delta,0.01225,-0.326
+Fitted on hopper/band training points,Moisture_T30,0.00645,0.142
+Fitted on hopper/band training points,Moisture_T15,0.05718,0.696
+Fitted on hopper/band training points,RVI_T0,0.01814,0.497
+Fitted on hopper/band training points,SMAP_Surface_T15,0.07935,0.618
+Fitted on hopper/band training points,SMAP_Root_T15,0.01914,0.201
+Applied to April swarms only test points,Precip_T45,0.08254,0.586
+Applied to April swarms only test points,Precip,0.00879,0.235
+Applied to April swarms only test points,Temp,0.04155,0.778
+Applied to April swarms only test points,SoilTemp_T30,0.03004,-0.491
+Applied to April swarms only test points,SoilTemp_T15,0.03748,-0.721
+Applied to April swarms only test points,RVI_Phenology_Delta,0.00978,-0.165
+Applied to April swarms only test points,Moisture_T30,0.00551,0.585
+Applied to April swarms only test points,Moisture_T15,0.06357,0.779
+Applied to April swarms only test points,RVI_T0,0.02094,0.612
+Applied to April swarms only test points,SMAP_Surface_T15,0.06429,0.785
+Applied to April swarms only test points,SMAP_Root_T15,0.01436,0.341

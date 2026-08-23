@@ -1,0 +1,19 @@
+panel,feature,mean_abs_shap,direction_corr
+Fitted on hopper/band training points,Precip_T45,0.12602,0.656
+Fitted on hopper/band training points,Precip,0.02065,0.222
+Fitted on hopper/band training points,Temp,0.06731,0.773
+Fitted on hopper/band training points,SoilTemp_T30,0.04211,-0.347
+Fitted on hopper/band training points,SoilTemp_T15,0.05924,-0.584
+Fitted on hopper/band training points,RVI_Phenology_Delta,0.01324,-0.384
+Fitted on hopper/band training points,Moisture_T30,0.01086,0.285
+Fitted on hopper/band training points,Moisture_T15,0.06116,0.729
+Fitted on hopper/band training points,RVI_T0,0.0239,0.534
+Applied to April presence (all categories) test points,Precip_T45,0.11606,0.604
+Applied to April presence (all categories) test points,Precip,0.01145,0.123
+Applied to April presence (all categories) test points,Temp,0.05663,0.766
+Applied to April presence (all categories) test points,SoilTemp_T30,0.04168,-0.498
+Applied to April presence (all categories) test points,SoilTemp_T15,0.06414,-0.781
+Applied to April presence (all categories) test points,RVI_Phenology_Delta,0.01118,-0.246
+Applied to April presence (all categories) test points,Moisture_T30,0.0109,0.688
+Applied to April presence (all categories) test points,Moisture_T15,0.06673,0.794
+Applied to April presence (all categories) test points,RVI_T0,0.02658,0.65

@@ -1,0 +1,5 @@
+seasonal_correction,features,n,positives,auc,precision,recall,found,missed,false_alarms
+True,era5,66,33,0.3733,0.0,0.0,0,33,14
+True,all,64,32,0.4355,0.1818,0.0625,2,30,9
+False,era5,66,33,0.4403,0.1333,0.0606,2,31,13
+False,all,64,32,0.4219,0.45,0.2812,9,23,11

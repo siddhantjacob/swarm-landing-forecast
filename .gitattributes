@@ -1,0 +1,15 @@
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.cff text eol=lf
+*.csv text eol=lf
+*.json text eol=lf
+*.qml text eol=lf
+
+*.tif binary
+*.png binary
+*.pdf binary
+*.pkl binary
+*.tgz binary

@@ -1,0 +1,25 @@
+set,check,window,n,value,feature,source,r2
+train pool (anchor 2020-02-03),pass_disagreement,T30,737,3.719,,,
+train pool (anchor 2020-02-03),pass_disagreement,T15,416,3.739,,,
+train pool (anchor 2020-02-03),corr_with_angle,T15,816,0.0747,RVI_Phenology_Delta,Sentinel-1,0.0056
+train pool (anchor 2020-02-03),corr_with_angle,T15,817,0.2159,Moisture_T30,Sentinel-1,0.0466
+train pool (anchor 2020-02-03),corr_with_angle,T15,813,0.239,Moisture_T15,Sentinel-1,0.0571
+train pool (anchor 2020-02-03),corr_with_angle,T15,817,0.2497,RVI_T0,Sentinel-1,0.0623
+train pool (anchor 2020-02-03),corr_with_angle,T15,817,-0.0263,Precip_T45,ERA5 (control),0.0007
+train pool (anchor 2020-02-03),corr_with_angle,T15,817,-0.1314,Precip,ERA5 (control),0.0173
+train pool (anchor 2020-02-03),corr_with_angle,T15,817,-0.2038,Temp,ERA5 (control),0.0415
+train pool (anchor 2020-02-03),corr_with_angle,T15,817,-0.3886,SoilTemp_T30,ERA5 (control),0.151
+train pool (anchor 2020-02-03),corr_with_angle,T15,817,-0.3576,SoilTemp_T15,ERA5 (control),0.1279
+train pool (anchor 2020-02-03),corr_with_angle,T15,817,0.1677,Presence,LABEL,0.0281
+test anchor (anchor 2020-03-15),pass_disagreement,T30,1162,3.926,,,
+test anchor (anchor 2020-03-15),pass_disagreement,T15,1162,3.84,,,
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1361,0.0396,RVI_Phenology_Delta,Sentinel-1,0.0016
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1362,0.2098,Moisture_T30,Sentinel-1,0.044
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1362,0.2014,Moisture_T15,Sentinel-1,0.0405
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1361,0.1994,RVI_T0,Sentinel-1,0.0397
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1362,-0.0205,Precip_T45,ERA5 (control),0.0004
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1362,-0.136,Precip,ERA5 (control),0.0185
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1362,0.0395,Temp,ERA5 (control),0.0016
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1362,-0.0231,SoilTemp_T30,ERA5 (control),0.0005
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1362,-0.0534,SoilTemp_T15,ERA5 (control),0.0029
+test anchor (anchor 2020-03-15),corr_with_angle,T15,1362,0.0399,Presence,LABEL,0.0016

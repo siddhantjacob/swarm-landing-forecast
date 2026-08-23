@@ -1,0 +1,49 @@
+THIRD-PARTY DATA AND ATTRIBUTION NOTICE
+
+The MIT licence in LICENSE applies to the original software and documentation
+in this repository. It does not relicense third-party datasets, publications,
+or imagery. Users remain responsible for complying with the terms of each
+provider.
+
+FAO DESERT LOCUST MATERIAL
+
+The CSV files and Desert Locust Bulletin in source_data/ are unmodified Food
+and Agriculture Organization of the United Nations (FAO) materials. FAO has
+described Locust Hub survey and control data as available for research and
+other non-commercial purposes. Item-level terms and FAO publication terms are
+controlling and should be checked before reuse or redistribution. Cite FAO and
+the Locust Hub, and do not imply FAO endorsement of this study.
+
+ERA5-LAND / COPERNICUS CLIMATE CHANGE SERVICE
+
+Weather features and risk-map rasters were derived from the Earth Engine asset
+ECMWF/ERA5_LAND/DAILY_AGGR. For the 2020 material used here:
+
+  Contains modified Copernicus Climate Change Service Information 2020.
+
+Neither the European Commission nor ECMWF is responsible for any use that may
+be made of the Copernicus Information or Data contained in this repository.
+
+SENTINEL-1
+
+Radar features were derived from COPERNICUS/S1_GRD in Google Earth Engine and
+remain subject to the Copernicus Sentinel Data Terms and Conditions. Cite the
+Copernicus Sentinel programme and the source product when reusing them.
+
+NASA SMAP
+
+Soil-moisture comparison features were derived from
+NASA/SMAP/SPL4SMGP/007. NASA states that this dataset is in the public domain
+and available without restriction on use and distribution. Version 7 has been
+superseded by version 8; it is retained here solely to reproduce the historical
+experiment. Recommended product citation:
+
+  Reichle, R. H. et al. (2022). SMAP L4 Global 3-hourly 9 km EASE-Grid
+  Surface and Root Zone Soil Moisture Analysis Update, Version 7. NASA NSIDC
+  DAAC. https://doi.org/10.5067/LWJ6TF5SZRG3
+
+COPERNICUS GLOBAL LAND COVER
+
+The habitat masks were derived from Copernicus Global Land Cover products and
+remain subject to the source product's terms. The Somaliland mask uses a
+documented reconstruction described in somaliland_test/README.md.
