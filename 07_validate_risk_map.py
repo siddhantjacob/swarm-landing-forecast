@@ -116,8 +116,10 @@ print(f"  It contains {alert_hit}/{len(sw)} ({alert_hit/len(sw):.1%}) of the Apr
 # is set against the marginal swarms the model adds. That ratio is the
 # operational version of the concentration figures above.
 #
-# k-center, solved by farthest-point clustering (Gonzalez 1985). Counts are
-# an upper bound within a factor of 2 of optimal; k-center is NP-hard.
+# Fixed-radius coverage, approximated by deterministic farthest-first
+# clustering. Gonzalez's 2-approximation guarantee is for the reverse
+# fixed-k problem (minimising the maximum radius), so these counts are
+# comparative estimates rather than globally optimal base counts.
 SERVICE_RADII_KM = (25, 50, 75)
 MAX_BASES = 400
 # Alerted pixels are subsampled before clustering. At ~8,000 samples over

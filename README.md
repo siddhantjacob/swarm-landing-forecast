@@ -202,7 +202,8 @@ and numpy 2.4.2. It reproduced the reported numerical results: weekly AUCs
 [−0.0984, −0.0262]; the four corrected feature-set configurations
 (0.755 / 0.710 / 0.767 / 0.736); random 5-fold 0.897, forward holdout 0.764, block CV 0.718;
 optimism gap +0.133; 55 and 159 distinct ERA5 cells; and the full risk-map table —
-272 / 6 / 1 / 15 swarms by class, 84.8% alert recall, +10,002 km² for 7 more swarms.
+272 / 6 / 1 / 15 swarms by class; 84.8% alert recall within the classified habitat mask
+(279/329); +10,002 km² for 7 more swarms.
 
 The result CSVs and GeoTIFFs were byte-identical to the committed references. The three SHAP PNGs
 were numerically equivalent but not byte-identical: 3.8–4.2% of pixels changed under a different
@@ -420,8 +421,8 @@ so the cross-target design did not break them.
 | Presence (all categories) | 0.778 | 0.846 | −0.068 |
 
 Presence is easier for the model and equally easier for the baseline. The conclusion is invariant
-to target choice. Caveat: 463 of 649 presence sightings are swarms, so this does not strongly test
-whether hoppers are easier.
+to target choice. After cross-category coordinate-date deduplication, 447 of 649 presence sightings
+retain the swarm label, so this does not strongly test whether hoppers are easier.
 
 ### Absence definition
 
@@ -479,7 +480,8 @@ point clustering, Gonzalez 1985):
 | 75 km | 18 | 21 | +3 | 0.4 |
 
 Going from the known infested area to the full alert adds **10,002 km² and finds 7 more swarms**
-(2.1%). Report this with the 84.8% alert recall, never the recall alone.
+(2.1%). Report this with the 84.8% recall within the classified habitat mask (279/329), never the
+recall alone.
 
 ---
 

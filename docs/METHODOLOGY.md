@@ -17,7 +17,7 @@ Scope constraints: the 2020 outbreak, East Africa.
 |---|---|
 | Region | 36–39°E, 0–6°N, ~220,000 km² |
 | Period | 18 Feb – 27 Apr 2020, ten consecutive 7-day windows |
-| Labels | FAO Locust Hub field reports (hoppers, bands, adults, swarms, `NO LOCUST`) |
+| Labels | FAO Desert Locust Observations (Data Catalogue) field reports (hoppers, bands, adults, swarms, `NO LOCUST`) |
 | Model | Random Forest, 100 trees, `max_depth=5`, `class_weight='balanced'`, `random_state=42` |
 | Threshold | 0.5, fixed before any test data was seen |
 | Tuning | none |
@@ -161,8 +161,9 @@ data. Applying TU Wien to the East African archive is the substantive future wor
 ### Absences
 
 Real FAO `NO LOCUST` survey records are used first; habitat-masked random background tops up any
-shortfall against that week's sighting count. Realised: 51 real absences, 630 synthetic across the
-test point file. The `Source` column preserves which is which.
+shortfall against that week's sighting count. Across the full W1–W10 swarm/adult point set, 51
+absences are real and 630 synthetic; the primary W7–W10 forward holdout contains 480 synthetic
+backgrounds and no real absences. The `Source` column preserves which is which.
 
 ### Seasonal correction
 
@@ -321,8 +322,9 @@ wind explains where the swarms in this study landed — the WNW corridor leads o
 | Presence (all categories) | 0.778 | 0.846 | −0.068 |
 
 Presence is easier for the model (+0.023) and equally easier for the baseline (+0.026); the gap is
-unchanged, so the conclusion is invariant to target choice. Caveat: 463 of 649 presence sightings
-are swarms, so this does not strongly test whether hoppers are easier.
+unchanged, so the conclusion is invariant to target choice. After cross-category coordinate-date
+deduplication, 447 of 649 presence sightings retain the swarm label, so this does not strongly test
+whether hoppers are easier.
 
 ### 4.6 Validation diagnostics
 
@@ -380,6 +382,10 @@ both collapse: absolute AUCs are optimistic by roughly 0.2 while the comparison 
 Applied to a 1.1 km grid over the full region (two-pass percentile classification: top 5% HIGH, 10%
 MEDIUM, 25% LOW), with a separate layer for the 30 km buffer around known infestations.
 
+Of the 463 April swarm sightings, 134 fall outside the classified habitat mask and cannot be scored
+against this map. The following counts and percentages therefore use the 329 sightings within the
+classified habitat mask.
+
 | Class | Swarms | % swarms | % area | Concentration |
 |---|---|---|---|---|
 | Known infested (≤30 km) | 272 | 82.7% | 27.7% | **2.99×** |
@@ -409,12 +415,14 @@ area alone (model-free) and the full alert.
 
 Moving from the known infested area to the full alert adds 10,002 km² and finds 7 additional swarms
 (2.1%). This is §4.7's 0.44× restated in the unit a control programme budgets in, and should always
-be quoted with the 84.8% alert recall rather than the recall alone.
+be quoted with the 84.8% alert recall within the classified habitat mask (279/329), rather than the
+recall alone.
 
-k-center, solved by farthest-point clustering (Gonzalez 1985, *Theoretical Computer Science*
-38:293–306): deterministic, monotone, a 2-approximation, so counts are upper bounds within a factor
-of 2 of optimal. Alerted pixels are subsampled to 8,000 (~2.4 km mean spacing), which biases counts
-slightly low.
+The deterministic farthest-first heuristic is based on Gonzalez (1985, *Theoretical Computer
+Science* 38:293–306). Gonzalez's 2-approximation guarantee applies to the reverse fixed-*k*
+problem—minimising the maximum radius—not to the fixed-radius problem solved here. The resulting
+base counts are therefore comparative operational-cost estimates, not globally optimal counts.
+Alerted pixels are subsampled to 8,000 (~2.4 km mean spacing), which biases counts slightly low.
 
 ## 5. Conclusions
 
